@@ -1,0 +1,127 @@
+.divContain {
+	padding-top: 100px;
+	padding-bottom: 10px;
+	width: 650px;
+	/* background-color: #ccc; */
+	padding-left: 60px;
+}
+
+.divInner {
+	border: solid 2px #ddd;
+	border-radius: 5px;
+}
+
+.divTitle {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+
+
+table.centerTable{
+	margin:auto;
+
+}
+
+
+* {
+  margin: 0;
+}
+
+@media (max-width: 767px){
+
+	
+	.right{
+	width: 100%;
+	height:100%;
+	margin: 0 auto;
+	}
+	table.rightTable{
+			border-collapse: inherit;
+			padding-top: 5px;
+	}
+	
+	.top-right{
+		min-height:0px !important; /* browser fill */
+		width:100%;
+	}
+	
+
+}
+
+@media (min-width: 768px){
+
+
+	
+	.left{
+	float:left;
+	background-color: #F1F1F2;
+	}
+	
+	.right{
+		float:right;
+		min-height:100% !important; /* browser fill */
+	
+	}
+	
+	.left, .right{
+		width: 50%;
+		height:100%;
+		margin: 0 auto 0 auto;
+	}
+	
+	.top-left, .top-right{
+		min-height:850px !important; /* browser fill */
+		width:100%;
+		color:#404040;
+	}
+
+
+	table.rightTable{
+			border-collapse: inherit;
+			padding-top: 40%;
+	}
+	
+	table.leftTable{
+		border-collapse: inherit;
+		text-align: center;
+			padding: 30%;
+	}
+	
+	
+	table.rightTable td
+	{
+		padding-top: 15px;
+	}
+	
+	
+	
+	
+}
+
+html,body,.container
+{
+    height:100%;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+
+
+.fontColor{
+	color:#404040 !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, input, button, select, textarea, .h1, .h2,
+	.h3, .h4, .h5, .h6, .navbar-search, .search-query {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	
+}
+
+.text-info{
+	color:#404040;
+}
+
+	

@@ -1,0 +1,43 @@
+
+ #dmtabs {
+	background: transparent;
+	border: none;
+}
+
+
+
+#dmtabs .ui-widget-header {
+	background: #F8F8F8;
+	border: none;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	border-style:solid;
+	border-bottom:thin solid #BEBEBE;
+
+}
+#dmtabs .ui-tabs-nav .ui-state-default {
+	background: transparent;
+	border: none;
+}
+#dmtabs .ui-tabs-nav .ui-state-active {
+	background: transparent url(../../images/yellow_bar.png) no-repeat bottom
+		center;
+	border: none;
+}
+#dmtabs .ui-tabs-nav .ui-state-default a {
+			padding: 25px 15px 22px 15px;
+	font-weight:700;
+	/* color: black; */
+	color: #404040;
+}
+#dmtabs .ui-tabs-nav .ui-state-active a {
+	font-weight:800;
+	/* color: #EA232A; */
+	color: #DD1D21;
+	padding: 25px 15px 22px 15px;
+}
+#dmtabs .ui-tabs-nav .ui-icon {
+	display: inline-block;
+}
+

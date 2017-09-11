@@ -1,0 +1,200 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * Provides the general element class based definitions.  These definitions are
+ * either non element specific, were too short to warrant their own CSS file,
+ * or are not associated with the general layout elements.
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.Indent 			{margin-left:	15px;}
+
+.TextAlignLeft		{text-align:	left   !important;}
+.TextAlignCenter	{text-align:	center !important;}
+.TextAlignRight		{text-align:	right  !important;}
+
+.Bold 				{font-weight:	bold;}
+.Italicize			{font-style:	italic;}
+.SmallerFont		{font-size:		smaller;}     /*not really necessary, but one never knows...use it inline with a SPAN class*/
+.LargerFont			{font-size:		larger;}     /*to emphasize words, use it inline with a span class*/ 
+
+.GrayBackground		{background-color: #e8e8e8 !important;}
+.MediumBlueBackground{background-color: #6699CC !important;}
+
+
+
+h2.Underline, h3.Underline
+{
+	border-bottom:		2px solid #aaaaaa;
+	margin-bottom:		0.5em;
+}
+
+
+ul.NoIndent, ol.NoIndent
+{
+	margin-left:		-0.5em;
+}
+
+li .Title
+{
+	font-weight:		bold;
+}
+
+.ExtraWhiteSpace li
+{ 
+	padding-top:		8px;
+}	
+
+
+/* Columns type container that doesn't use a table */
+/* see: http://www.quirksmode.org/css/clearing.html for a discussion on how to properly do this */
+div.ColumnContainer
+{
+	overflow:			visible;
+}
+div.ColumnContainer div.LeftColumn
+{
+	width: 				45%;
+	float: 				left;
+}
+div.ColumnContainer div.RightColumn
+{
+	width:				45%;
+	float: 				right;
+}
+
+
+
+
+/* Gray information box */
+.Note
+{
+	padding:			5px 8px 8px 8px;
+	background-color:	#ebebeb;
+	font-size:			0.85em;
+}
+
+
+.RecordCount, .TableFooterNote, .ChartOptions
+{
+/* kludge incase something causes table to get really wide...
+	width:				580px;
+*/
+	text-align:			right;
+	padding-right: 		5px;
+	font-size:			0.9em;
+}
+.RecordCount
+{
+	font-style:			italic;
+}
+
+.SupressedCellMessage 
+{
+	font-style: 		italic;
+}
+
+.NoDataReturned
+{
+	color: 				red;
+	font-weight:		bold;
+}
+
+.DataDate
+{
+	font-weight:		bold;
+	font-style:			italic;
+	color:				#336699;
+	text-align:			center;
+	margin-bottom:		-4px;
+}
+
+
+
+.ChartOptions img
+{
+	padding-left: 		8px;
+}
+.ChartOptions a:hover, div.ChartOptions a:active, div.ChartOptions a:focus
+{
+	background-color:	transparent;
+}
+
+
+
+/* inter page index links - like IP Alpha etc. */
+.JumpToLinks a
+{
+	padding-left:		5px;
+	padding-right:		5px;
+}
+
+
+
+
+/* Definitions for extra table cell padding */
+table.ExtraCellPadding th 
+{
+	padding-top: 		8px;
+	padding-bottom:		5px;
+}
+table.ExtraCellPadding td
+{
+	padding-top: 		6px;
+	padding-bottom:		7px;
+}
+
+
+
+table#userCriteria th
+{
+	padding-left:		5px;
+	background-color:	#336699;
+}
+table#userCriteria td
+{
+	width:				75%;
+	color:				white;
+	background-color:	#6699cc;
+}
+
+
+
+/* basic table/block layout with basic, simple formatting */
+table.SimpleBlockLayout
+{
+	background-color: 	transparent;
+	width:				100%;
+}
+table.SimpleBlockLayout th
+{
+	padding:			15px 5px 0 0px;
+	font-size:			1.0em;
+	color:				#336699;
+	background-color:	transparent;
+	border:				none;
+	text-align:			left;
+	vertical-align: 	top;
+}
+table.SimpleBlockLayout td
+{
+	border:				none;
+	padding:			4px 5px 0 0px;
+	text-align:			left;
+	vertical-align: 	top;
+}
+table.SimpleBlockLayout td input.Selector
+{
+	margin-top:			2px;
+}
+
+table.SimpleBlockLayout *.LeftColumn,
+table.SimpleBlockLayout *.RightColumn
+{
+	width:				45%;
+	border: 			none !important;
+}
+table.SimpleBlockLayout *.RightColumn
+{
+	border-left:		20px solid white !important;
+}
+
+/*============================ End of Style Sheet ============================*/
+

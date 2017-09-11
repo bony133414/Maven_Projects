@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+}
+
+@media (max-width: 767px){
+	.hp-login-form{
+		margin-top: 20px; 
+	}
+	
+	
+	.right{
+	width: 100%;
+	height:100%;
+	margin: 0 auto;
+	}
+	table.rightTable{
+			border-collapse: inherit;
+			padding-top: 5px;
+	}
+	
+	.top-right{
+		min-height:0px !important; /* browser fill */
+		width:100%;
+	}
+	
+	#loginButton
+	{
+		min-width: 0px;
+		width: 100%;
+	}
+	
+	.loginText{
+		padding-left: 10px;
+	}
+	
+	.inputField
+	{
+		padding-top: 10px; 
+	}
+	
+	.forgotPassword
+	{
+		padding-top: 20px;
+	}
+	
+	.emailUs{
+		padding-top: 10px;
+	}
+	
+	.callUsFooter{
+		margin-top: 80px !important;
+	}
+	
+	.errorMessage{
+		padding-top: 15px;
+	}
+	
+		
+	.callUsFooter{
+	  
+	}
+	
+}
+
+@media (min-width: 768px){
+	
+	
+	.emailUs{
+		padding-top: 30px;
+	}
+	.forgotPassword
+	{
+		padding-top: 60px;
+	}
+	#loginButton
+	{
+		min-width: 200px;
+	}
+	
+	.left{
+	float:left;
+	background-color: #F1F1F2;
+	}
+	
+	.right{
+		float:right;
+		min-height:100% !important; /* browser fill */
+	
+	}
+	
+	.left, .right{
+		width: 50%;
+		height:100%;
+		margin: 0 auto 0 auto;
+	}
+	
+	.top-left, .top-right{
+		min-height:850px !important; /* browser fill */
+		width:100%;
+	}
+	
+	.bottom-left{
+		
+	}
+	
+
+	table.rightTable{
+			border-collapse: inherit;
+			padding-top: 40%;
+	}
+	
+	table.leftTable{
+		border-collapse: inherit;
+		text-align: center;
+			padding: 30%;
+	}
+	
+	
+	table.rightTable td
+	{
+		padding-top: 15px;
+	}
+	
+	
+	a.loginText{
+		font-size: 18px;
+	  	line-height: 1.33;
+	  	/* color: red; */
+	  	color: #404040;
+	  	padding-left: 10px;
+	  	cursor:pointer;
+	}
+	
+}
+
+html,body,.container
+{
+    height:100%;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+
+
+
+.lang-dropdown {
+    /* Size and position */
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px 16px;
+ 
+    /* Styles */
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+    cursor: pointer;
+    outline: none;
+ 
+    /* Font settings */
+    
+    /* color: black; */ 
+    color: #404040;
+    font-size: 16px;
+    
+}
+.lang-dropdown .active
+{
+  /* border-color: #EA232A; */
+  border-color: #DD1D21;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(226,50,10,0.55);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(226,50,10,0.55);
+}
+
+.lang-dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #8aa8bd transparent;
+}
+
+.lang-dropdown .dropdown {
+  /* Size & position */
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    display: none;
+ 
+    /* Styles */
+    background: white;
+    border-radius: inherit;
+    border: 1px solid rgba(0,0,0,0.17);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-weight: normal;
+    font-size: 16px;
+    transition: all 0.5s ease-in;
+    list-style: outside;
+ 
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none;
+}
+ 
+.lang-dropdown .dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    /* color: black; */
+    color: #404040;
+    border-bottom: 1px solid #e6e8ea;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+    transition: all 0.3s ease-out;
+}
+ 
+.lang-dropdown .dropdown li i {
+    float: right;
+    color: inherit;
+}
+ 
+.lang-dropdown .dropdown li:first-of-type a {
+    border-radius: 7px 7px 0 0;
+}
+ 
+.lang-dropdown .dropdown li:last-of-type a {
+    border-radius: 0 0 7px 7px;
+    border: none;
+}
+ 
+/* Hover state */
+ 
+.lang-dropdown .dropdown li:hover a {
+    background: #f3f8f8;
+}
+
+.lang-dropdown .dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 15px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: #fff transparent;    
+}
+ 
+.lang-dropdown .dropdown:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 13px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;    
+}
+
+.lang-dropdown.active .dropdown {
+    opacity: 1;
+    display:block;
+    pointer-events: auto;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}

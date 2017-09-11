@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd		
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<context:component-scan base-package="com.hp.sheve.controllers"/>
+	
+	
+  	<beans:bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+  		  <!--<beans:property name="jndiName" value="java:comp/env/jdbc/landingPagesDS"/>-->
+      	   <beans:property name="jndiName" value="java:jboss/jdbc/landingPagesDS"/> 
+    </beans:bean>
+ 	
+ 	 
+	
+	<beans:bean id="internalReport" class="com.hp.sheve.dao.InternalReportImpl">
+        <beans:property name="dataSource" ref="dataSource" /> 
+        <beans:property name="sqlQuery" value="SELECT distinct pageLink.DESCRIPTION, pageLink.LINKURL FROM user_role userrole JOIN landing_page_link_roles userLink ON userLink.ROLES = userrole.id JOIN landing_page_link pageLink ON pageLink.Id = userLink.landing_page_link where userrole.role_id in (:roles) " />      
+    </beans:bean>
+
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+	
+	<resources mapping="/resources/**" location="/resources/" />
+	
+	<annotation-driven />
+	
+	<beans:bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<beans:property name="location">
+			<beans:value>classpath:reportsConfig.properties</beans:value>
+		</beans:property>
+		<beans:property name="ignoreResourceNotFound" >
+		    <beans:value>true</beans:value>
+		 </beans:property>
+	</beans:bean>
+	
+	<util:properties id="ouProperties" location="classpath:reportsOUList.properties"/>
+ 	<context:property-placeholder ignore-unresolvable="true" properties-ref="ouProperties"/>	
+	
+</beans:beans>

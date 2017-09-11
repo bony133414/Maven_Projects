@@ -1,0 +1,111 @@
+
+@media (max-width: 991px){
+		.boxDocumentItem{
+			width:100%;
+			height: 100px;
+			margin: 20px;
+			-webkit-border-top-left-radius:0px;
+			-moz-border-radius-topleft:0px;
+			border-top-left-radius:0px;
+			-webkit-border-top-right-radius:0px;
+			-moz-border-radius-topright:0px;
+			border-top-right-radius:0px;
+			-webkit-border-bottom-right-radius:0px;
+			-moz-border-radius-bottomright:0px;
+			border-bottom-right-radius:0px;
+			-webkit-border-bottom-left-radius:0px;
+			-moz-border-radius-bottomleft:0px;
+			border-bottom-left-radius:0px;
+			cursor: pointer !important;
+			padding-top: 10px;
+	
+	}
+}
+
+@media (min-width: 992px ){
+
+		.boxDocumentItem{
+			width:100%;
+			height: 100px;
+			margin: 20px;
+			-webkit-border-top-left-radius:0px;
+			-moz-border-radius-topleft:0px;
+			border-top-left-radius:0px;
+			-webkit-border-top-right-radius:0px;
+			-moz-border-radius-topright:0px;
+			border-top-right-radius:0px;
+			-webkit-border-bottom-right-radius:0px;
+			-moz-border-radius-bottomright:0px;
+			border-bottom-right-radius:0px;
+			-webkit-border-bottom-left-radius:0px;
+			-moz-border-radius-bottomleft:0px;
+			border-bottom-left-radius:0px;
+			cursor: pointer !important;
+	
+	}
+
+}
+
+@media (max-width: 991px){
+		.button_colour{
+			 background: #67b11c;
+			 border: 2px solid #467813;
+			 height: 100px;
+			 margin: 0 1.5%;
+	}
+}
+@media (max-width: 992px){
+		.button_colour{
+			 background: #67b11c;
+			 border: 2px solid #467813;
+			 height: 100px;
+			 margin: 0 1.5%;
+	}
+}
+.circle
+    {
+    position:absolute;
+    right:-15px;
+    top:-15px;
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:700;
+    color:#fff;
+    line-height:30px;
+    text-align:center;
+   
+    }
+    
+    .logoutCss
+    {
+    	color: #404040;
+    	font-family: "arial";
+    }
+    
+.recentTitle
+{
+	color: #404040;
+	font-weight: 900;
+	font-size: 19px;
+	margin-bottom: 5px";
+	font-family: "arial";
+	 
+}
+
+.arrow{
+	position:absolute;
+	right: 5px;
+	top: 50%;
+}
+
+.foregroundColorTheme
+{
+	color:#404040;
+}
+
+.disabledDocumentItem{
+	opacity: 0.7;
+	cursor: default !important;
+}

@@ -1,0 +1,77 @@
+
+.selectable .ui-selecting a {
+	background:none;
+	color: red !important;}
+
+.selectable .ui-selected{
+		/* border-bottom: 6px solid #f7d117; */
+		border-bottom: 6px solid #FBCE07;
+	padding-bottom: 5px;
+}
+	
+.selectable .ui-selected a{
+	background:none;
+	color: red !important;}
+.selectable { list-style-type: none; padding: 0; width: 100%; margin: 0 auto 0 auto; list-style-position:inside; text-align: center;}
+
+.selectable li{
+	font-family: "HP Simplified", "Trebuchet MS", "Helvetica", "Arial",
+		"Verdana", "sans-serif";
+		padding: 0.5em; 
+}
+
+a{
+	font-size: 12pt !important; 
+	text-decoration: none;
+	font-weight:700;
+		background:none;
+		/* color : black;  */
+		color: #404040;
+}
+.selectable a{
+	border: none; 
+	/* color: black !important; */  
+	color: #404040 !important;
+	text-decoration: none;
+}
+
+.selectable a:HOVER{
+	border: none; 
+	/* color: #EA232A !important; */
+	color: #DD1D21 !important;  
+	text-decoration: none;
+	/* border-bottom: 6px solid #f7d117; */
+	border-bottom: 6px solid #FBCE07;
+	padding-bottom: 5px;
+}
+}
+
+.selectable li:HOVER{
+
+		
+}
+
+.leftNav{
+position: fixed;
+	left: 0;
+	top: 0;
+	width: 20%;
+}
+
+.centerTable{
+	margin: 0 auto !important;
+}
+
+.heading3{
+	orphans: 3;
+	widows: 3;
+	page-break-after: avoid;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 1.1;
+	color: inherit;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 65%;
+	font-size: 16px;
+}

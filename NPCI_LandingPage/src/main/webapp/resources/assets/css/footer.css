@@ -1,0 +1,63 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * Specific footer element ID CSS definitions.  This includes the standard 
+ * screen #footer and the print specific #printPageFooter ID'd sections.  The
+ * standard footer is displayed as the default.  The print.css definitions 
+ * can hide this and display a printer specific footer if desired.
+ *
+ * This is done as an ID to better facilitate dropping in an adopters specific
+ * header/banner.
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#footer
+{
+	background-color:	#003366;
+	color:				#bbbbbb;
+	text-align:			center;
+	font-size: 			10px;
+	padding:			6px 0px 5px 0px;
+	clear:				both;
+}
+
+#footer a
+{
+	margin-right:		8px;		/* have to have margins different due to cr/lf line white space */
+	margin-left:		6px;
+	background-color:	transparent;
+	font-weight:		normal;
+	font-size:			10px;
+	color:				#FFFFFF;
+	text-decoration:	none;
+}
+#footer a:hover, 
+#footer a:active, 
+#footer a:focus
+{ 
+	font-weight:		bold;
+	text-decoration:	underline;
+}
+
+
+#printPageFooter 	{display: none;}
+
+
+/* Definitions needed for the javascript based footer */
+#footer .JavascriptFooterWrapper table
+{
+	width:				650px;
+}
+#footer .JavascriptFooterWrapper table table
+{
+	width:				auto;
+}
+
+#footer .JavascriptFooterWrapper *
+{
+	color:				white;
+}
+
+#copyrightNotice
+{
+	color:				#bbbbbb;
+}
+
+/*============================ End of Style Sheet ============================*/

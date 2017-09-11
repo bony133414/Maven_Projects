@@ -1,0 +1,74 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * Specific content (page's main body content) element ID CSS definitions.  
+ *
+ * This is done as an ID to better facilitate dropping in an adopters specific
+ * header/banner.
+ *
+ * Note that divs can be used/were used in the past.  However, currently a table 
+ * is used instead of a floating left right div blocks because it is just easier 
+ * to control and deal with.  It also has a bennifit of setting the bottom of 
+ * the content for the footers.
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#content
+{
+	background-color:	#FFFFFF;
+}
+/* this was commented out then reimplemented - re commented out because data table was loosing border...
+#content td
+{
+	border:				none;
+	vertical-align:		top;
+}
+*/
+#content .Navigation
+{
+	position:			relative;	/* needed for menu to be able get local relative position info */
+    width:				150px;		/*to position the content area to the right of the navigation*/
+	padding:			5px 5px 8px 0px;
+}
+#content .Sections
+{
+	padding:			0px 9px 8px 5px;
+    color:				black;
+/* this effects the H type elements.  Makes font look larger...
+	line-height: 		1.3em;
+*/
+}
+#content .Aside
+{
+}
+
+
+#content .Sections .Header
+{
+	margin-bottom:		0em;
+}
+
+
+/* Bottom content's org unit footer container */
+#content .Sections .Footer
+{
+	margin:				0.7em 0 0 0;
+	border-top:			2px solid #aaaaaa;
+	padding:			2px 0 0 0;
+	font-weight:		bold;
+	color:				#336699;
+	text-align:			center;
+	clear:				both;
+}
+
+
+#navigationPath
+{
+	margin-bottom:		1em;
+	font-size:			0.85em;
+	color:				#777777;
+}
+#navigationPath a
+{
+	text-decoration:underline;
+}
+
+/*============================ End of Style Sheet ============================*/
+

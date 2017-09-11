@@ -1,0 +1,167 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+ * Provides the basic global element non classed definitions.
+ *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+*
+{
+	margin:				0;
+	padding: 			0;
+	color:				black;
+	font-family:		verdana, arial, helvetica, sans-serif;
+	font-weight:		normal;
+}
+
+
+
+html
+{
+	border:				0;  /* IE defaults to 1px - so turn this off */
+}
+
+
+body
+{
+	width: 				100%;
+	height: 			100%;
+	margin: 			0;
+	padding:			0;	/* can't set for NN 4.x tables and assoc elements - messes things up */
+	background:			url('../image/background.gif') repeat-x #003366;
+	font-size:			0.75em;	/* .70 (IE) -72 (FF)=original small.  75%=little bit bigger */
+}
+
+
+#page
+{
+	width:				755px;
+	margin: 			auto;	/* centers block on page - whole point of this container */
+	padding-top:		20px;
+}
+
+
+#adaQuickJumpTos a
+{
+	position: 			absolute;
+	top: 				-1000px;
+	left:				-1000px;
+	height: 			1px;
+	width: 				1px;
+	text-align: 		left;
+	overflow: 			hidden;
+}
+
+
+img {border: 0 none transparent;}
+
+
+h1, h2, h3, h4, h5, h6, h7, h8, h9
+{
+	font-family:		verdana, arial, helvetica, sans-serif;
+	font-weight:		normal;
+	font-size:			0.9em;
+	color:				black;
+}
+h1
+{
+	font-size:			1.2em;
+	font-weight:		bold;
+	color:				#336699;
+	border-bottom:		2px solid #aaaaaa;
+	margin-bottom:		0.5em;
+}
+h2, h3
+{
+	font-size:			1.1em;
+	font-weight:		bold;
+	color:				#003366;
+}
+h3
+{
+	font-weight:		normal;
+	font-style:			italic;
+}
+h4
+{
+	font-weight:		bold;
+}
+
+
+/* NS uses padding, IE uses margin so must set both to get consistant look */
+ul, ol
+{ 
+	margin:				2px 0px 0px 0px;
+	padding: 			0px 0px 0px 20px;
+	list-style-type: 	disc;
+	list-style-position:outside;
+}
+ol
+{
+	padding-left:		25px;
+	list-style-type: 	decimal;
+	list-style-position:outside;
+}
+li 
+{
+	padding-top:		2px;
+	padding-bottom:		1px;
+}
+li h3 {font-size: 0.85em;}
+
+
+td textarea
+{
+	width:				100%;
+	font-size:			0.8em;	/* be careful about font family if you want to control size */
+	padding: 			2px 2px 1px 2px; 
+	overflow:			auto;
+}
+
+
+a   /*--- Must be in this order: A, link, visited, hover, active ---*/
+{
+	text-decoration:	underline;
+	color:				#006699;
+	background-color:	transparent;	/* NN 4.x does better with general setter NOT specific one */
+}
+a:visited {color: #663399;}
+a:hover, a:active, a:focus
+{
+	text-decoration:	none;
+	color:				#FFCC66;
+	background-color:	#336699;
+}
+
+a img, a:visited img, a:hover img, a:active img, a:focus img
+{
+	text-decoration:	none; 
+	background-color:	transparent !important;
+}
+
+
+input
+{
+	margin-top:			1px;
+}
+
+input:focus, textarea:focus, select:focus
+{
+	background-color:	lightyellow;
+}
+
+
+/* formatting for the "your browser doesn't support scripting" container */
+noscript div
+{
+	width:				133px;
+	margin-top:			5px;
+	margin-left:		1px;
+	padding:			2px;
+	padding-right:		0px;
+	font-size:			1em;
+	font-weight:		normal;
+	color:				#cc0000;
+	background-color:	#e8e8e8;
+	border:				3px groove #777777;
+}
+
+/*============================ End of Style Sheet ============================*/
+

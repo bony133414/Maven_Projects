@@ -1,0 +1,359 @@
+
+
+@media (max-width: 767px){
+	
+	.mainContainer{
+}
+	
+	.mailContainer{
+		
+		/* Size and position */
+	    width: 100%;
+	 	
+	    /* Styles */
+	    background: #fff;
+	   
+	    cursor: pointer;
+	    outline: none;
+	    /* Font settings */
+	   
+	    /* color: black;  */
+	    color: #404040;
+	    font-size: 16px;
+	}
+	
+		.mailContainer .mailList {
+	  /* Size & position */
+	 
+	    position: absolute;
+	    left: -30px;
+	    right: 0;
+	  	
+	    /* Styles */
+	    background: white;
+	    border-radius: inherit;
+	  
+	    	
+	    font-weight: normal;
+	    font-size: 14px;
+	    list-style: none;
+	}
+
+	div.detailsContainer{
+		width: 100%;
+	}
+	
+	.actionButton{
+		width: 100%;
+		min-width: 100px;
+		margin-top: 15px; 
+	}
+	
+	#searchFormDiv{
+		margin-top: 50px;
+		width: 100%;
+		
+	}
+	
+	#search{
+		margin-top: 10px;
+		width: 100%;
+	}
+	
+	#searchResultContainer{
+		margin-top: 10px;
+		height: 800px;
+		 width: 100%
+	}
+	
+	.searchResultContainerLeft{
+		 border-left-style: none;
+		 width: 100%;
+	}
+	
+	
+	#searchDetailsContainer {
+			display: none;
+		width: 100%;
+		margin-top: 50px;
+		min-height: 700px;
+	}
+	
+		div.detailsHeader{
+			min-heigh: 50px;
+			margin: 0;
+			width: 100%;
+			background-color: #E6E6E5;
+			overflow: hidden;
+			height: auto;
+	}
+	
+	div.detailsSubContainer{
+		 width: 100%;
+		 height: auto;
+		 margin:0;
+		 margin-top: 20px;
+		 overflow: hidden;
+		 min-heigh: 300px;
+	}
+	
+	table.documentDetails{
+		margin: 0;
+		margin-top: 20px;
+		width: 100%;
+		border-bottom: 1px solid #DFDFDF;
+		text-align: left;
+	}
+	
+	#notFoundDiv{
+	}
+}
+
+@media (min-width: 768px){
+
+	.mainContainer{
+	
+		margin:20px;
+	}
+	.mailContainer{
+		
+		/* Size and position */
+	    position: relative;
+	    margin: 0 auto;
+	    padding: 10px 16px;
+	    width: 45%;
+	 	float:left;
+	    /* Styles */
+	    background: #fff;
+	   
+	    cursor: pointer;
+	    outline: none;
+	    /* Font settings */
+	   
+	    /* color: black; */ 
+	    color: #404040;
+	    font-size: 16px;
+	}
+
+	div.detailsContainer{
+	height:600px; 
+	width: 53%;
+	float: right;
+	border-left: 1px solid #DFDFDF;
+	
+	}
+
+	.actionButton{
+		min-width: 200px;
+		margin-top: 10px; 
+		margin-left: 10px;
+	}
+	
+	#searchFormDiv{
+		margin-top: 50px;
+		width: 45%;
+		float: left;
+	}
+	
+	#searchResultContainer{
+		margin-top: 10px;
+		float: right;
+		height: 800px;
+		 width: 50%
+	}
+	
+	.searchResultContainerLeft{
+		 float: left !important;
+		 width: 50%;
+		 border-left-style: none !important;
+	}
+	  
+
+	.mailContainer .mailList {
+	  /* Size & position */
+	    height:665px;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	  	overflow:auto;
+	    /* Styles */
+	    background: white;
+	    border-radius: inherit;
+	  
+	    	
+	    font-weight: normal;
+	    font-size: 14px;
+	    list-style: none;
+	}
+	
+	
+	#searchDetailsContainer {
+		display: none;
+		width: 45%;
+		margin-top: 50px;
+		min-height: 700px;
+	}
+	
+	div.detailsHeader{
+	 min-heigh: 50px;
+	margin: 15px;
+	background-color: #E6E6E5;
+	 overflow: hidden;
+	  height: auto;
+	
+	}
+	
+	div.detailsSubContainer{
+		 width: 85%;
+		 height: auto;
+		 margin:0 auto;
+		 margin-top: 20px !important;
+		 overflow: hidden;
+		 min-heigh: 300px;
+	}
+	
+	table.documentDetails{
+		margin: 20px;
+		width: 90%;
+		border-bottom: 1px solid #DFDFDF;
+		text-align: left;
+	}
+	
+	#notFoundDiv{
+		margin: 15px;
+	}
+	
+}
+
+h4, h2{
+	font-weight: bold;
+}
+
+.actionButtonText{
+	margin-left: 3px;
+	font-family: sans-serif !important;
+}
+.verticalHr {
+
+	border-left: thick solid #ff0000;}
+	
+.mailCircle
+    {
+    width:1px;
+    height:1px;
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius:50%;
+    background:#BBBDBF;
+    }
+
+
+
+
+table.documentDetails h5{
+	margin-bottom: 3px;
+	margin-top: 3px
+}
+
+div.detailsHeader h3{
+margin-left: 15px;
+}
+
+
+div.detailsTitle{
+	 height: 65px;
+	 border-radius: 7px;
+	 height: auto;
+	 min-heigh: 65px;
+	 overflow: hidden;
+}
+
+div.detailsTitle h3
+{
+font-weight: bold;
+}
+
+
+
+.mailContainer .mailList li div {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    /* color: black; */
+    color: #404040;
+    border-bottom: 1px solid #DFDFDF;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+}
+
+.mailContainer .mailList li i {
+    float: right;
+    color: inherit;
+}
+
+.mailContainer .mailList li a, a:focus, a:hover{
+    /* color: black; */
+    color: #404040;
+    text-decoration: none;
+}
+.mailContainer .mailList li:first-of-type div {
+   border-top: 1px solid #DFDFDF;
+}
+ 
+.mailContainer .mailList li:last-of-type div {
+   
+}
+ 
+ 
+ .mailContainer .mailList li:hover div {
+    background: #f8f8f8;
+}
+
+
+ .mailContainer .mailList li:hover .mailCircle {
+    /* background: #FD462A; */
+    background: #DD1D21;
+}
+
+.mailContainer .mailList li table img {
+float: right; margin-top: 2px;margin-left: 5px;
+}
+
+.selectedMail, .selectedMail:hover{
+	  background: #E6E6E5;
+}
+
+ .selectedMail .mailCircle {
+    /* background: #FD462A; */
+    background: #DD1D21;
+}
+
+.title{
+	width:100%;
+	/* border-bottom:thin solid #F9DC50; */
+	border-bottom:thin solid #FBCE07;
+}
+
+.documentPreview{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.btnNotSupported {
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	/* width:100px; */
+	/* width: 100%; */
+	min-width: 100px;
+	margin-top: 15px; 
+}
