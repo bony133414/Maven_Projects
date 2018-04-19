@@ -93,4 +93,16 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+		    <id>central</id>
+		    <name>DevCloudArtifactory-releases</name>
+		    <url>https://artifactory.csc.com/artifactory/Shell_RTSP</url>
+		</repository>
+		<snapshotRepository>
+		    <id>snapshots</id>
+		    <name>DevCloudArtifactory-snapshots</name>
+		    <url>https://artifactory.csc.com/artifactory/Shell_RTSP</url>
+		</snapshotRepository>
+    </distributionManagement>
 </project>
